@@ -1,0 +1,16 @@
+[package]
+name = "rattler-issue"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.82"
+bytes = "1.6.0"
+rattler = "0.23.2"
+rattler_conda_types = "0.22.0"
+rattler_package_streaming = "0.20.7"
+reqwest = "0.12.4"
+tokio = { version = "1.37.0", features = ["rt", "macros"] }
+
+[patch.crates-io]
+rattler = { git = "https://github.com/aochagavia/rattler.git", branch = "patched" }
